@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//alterado do git
 public class Princinpal {
 
 	private static Scanner teclado;
@@ -15,7 +15,7 @@ public class Princinpal {
 		
 		do {
 			System.out.println("Menu Principal");
-			System.out.println("Escolha uma Opc„o:\n1 - Pilha Sequencial\n2 - Pilha Encadeada\n3 - Fila Sequencial\n4 - Fila Encadeada\n5 - Lista Sequencial\n6 - Lista Encadeada\n7 - Arvore de Busca Binaria\n8 - Finalizar");
+			System.out.println("Escolha uma Opc√£o:\n1 - Pilha Sequencial\n2 - Pilha Encadeada\n3 - Fila Sequencial\n4 - Fila Encadeada\n5 - Lista Sequencial\n6 - Lista Encadeada\n7 - Arvore de Busca Binaria\n8 - Finalizar");
 			opcao1 = entrada.nextInt();
 			
 			switch (opcao1){
@@ -143,12 +143,12 @@ public class Princinpal {
 					opcao2 = entrada.nextInt();
 					switch (opcao2) {
 					case 1:
-						System.out.println("Opc„o 1");
+						System.out.println("Opc√£o 1");
 						LS = new Lista();
 						System.out.println("Lista Criada! ");
 						break;
 					case 2:
-						System.out.println("Op√ß√£o 2");
+						System.out.println("Op√É¬ß√É¬£o 2");
 						System.out.println("Adicione um nome na lista");
 						String nome = teclado.nextLine();
 						System.out.println("Adicione um idade na lista");
@@ -161,15 +161,15 @@ public class Princinpal {
 						LS.inserir(0, c1);
 						break;
 					case 3:
-						System.out.println("Opc„o 3");
+						System.out.println("Opc√£o 3");
 						
-						System.out.println("Qual Aluno voc√™ quer remover?");
+						System.out.println("Qual Aluno voc√É¬™ quer remover?");
 						int r = Integer.parseInt(teclado.nextLine());
 						
 						LS.remover(r-1);
 						break;
 					case 4:
-						System.out.println("Opc„o 4");
+						System.out.println("Opc√£o 4");
 
 						LS.exibirLista();
 						break;
@@ -187,13 +187,13 @@ public class Princinpal {
 					opcao2 = entrada.nextInt();
 					switch (opcao2) {
 					case 1:
-						System.out.println("Opc„o 1");
+						System.out.println("Opc√£o 1");
 						LE = new Lista2();
 						System.out.println("Lista Criada! ");
 					break;
 					
 					case 2:
-						System.out.println("Opc„o 2");
+						System.out.println("Opc√£o 2");
 						System.out.println("Adicione um nome na lista");
 						String nome = teclado.nextLine();
 						System.out.println("Adicione um idade na lista");
@@ -207,7 +207,7 @@ public class Princinpal {
 					break;
 					
 					case 3:
-						System.out.println("Opc„o 3");
+						System.out.println("Opc√£o 3");
 						
 						System.out.println("Adicione um nome na Lista");
 						String nnome1 = teclado.nextLine().trim();
@@ -222,15 +222,15 @@ public class Princinpal {
 					break;
 					
 					case 4:
-						System.out.println("Opc„o 4");
+						System.out.println("Opc√£o 4");
 						
-						System.out.println("Qual nome vocÍ quer remover?");
+						System.out.println("Qual nome voc√™ quer remover?");
 						String n = teclado.nextLine().trim();
 						LE.removeAluno(n);
 					break;
 						
 					case 5: 
-						System.out.println("Opc„o 5");
+						System.out.println("Opc√£o 5");
 						LE.exibirLista();
 					break;
 					
@@ -250,30 +250,30 @@ public class Princinpal {
 					opcao2 = entrada.nextInt();
 					switch (opcao2) {
 					case 1:
-						System.out.println("opc„o 1");
+						System.out.println("opc√£o 1");
 						System.out.println("digite o numero que deseja inserir");
 						int x = teclado.nextInt();
 						abb.insere(abb, x);
 						break;
 					case 2:
-						System.out.println("opc„o 2");
+						System.out.println("opc√£o 2");
 						System.out.println("digite o numero que deseja buscar");
 						int b = teclado.nextInt();
 						abb.busca(abb,b);
 						break;
 					case 3:
-						System.out.println("opc„o 3");
+						System.out.println("opc√£o 3");
 						abb.imprime(abb);
 						break;
 					case 4:
-						System.out.println("opc„o 4");
+						System.out.println("opc√£o 4");
 						System.out.println("digite o numero que deseja remover");
 						int y = teclado.nextInt();
 						abb.remover(abb,y);
 						
 						break;
 					case 5:
-						System.out.println("opc„o 5");
+						System.out.println("opc√£o 5");
 						break;
 					}
 				}while (opcao2 !=5);
